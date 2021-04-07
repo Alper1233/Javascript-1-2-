@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+
+<title>A program that mulitplies and divides </title>
+
+<style type="text/css">
+body {margin: 250px;}
+</style>
+
+<script src="script.js" defer></script> 
+</head>
+
+<body>
+
+<form>
+ Number 1: <input type="text" id="firstNumber" /><br>
+ Number 2: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+</form>
+
+<p>The Results are: <br>
+<span id = "result"></span>
+</p>
+
+<script>
+function divideBy()
+{
+	 firstNumber = document.getElementById("firstNumber").value;
+     secondNumber = document.getElementById("secondNumber").value;
+     document.getElementById("result").innerHTML = firstNumber/secondNumber;
+}
+
+function multiplyBy()
+{
+	 firstNumber = document.getElementById("firstNumber").value;
+	 secondNumber = document.getElementById("secondNumber").value;
+	 document.getElementById("result").innerHTML = firstNumber*secondNumber;
+}
+</script>
+</body>
+</html>
